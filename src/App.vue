@@ -1,22 +1,14 @@
 <template>
   <div id="app">
     <main-header></main-header>
-    <el-input placeholder="Please input userid" v-model="userid" ></el-input>
-    <el-input placeholder="Please input password" v-model="password" type="password"></el-input>
     <router-view></router-view>
     <main-footer></main-footer>
-  </div>  
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'app',
-  data () {
-    return {
-      userid: '',
-      password: ''
-    }
-  }
+  name: 'app'
 }
 </script>
 
