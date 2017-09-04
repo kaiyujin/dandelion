@@ -1,6 +1,7 @@
 <template>
   <main>
     <el-row>
+      <el-col>dandelion</el-col>
       <el-col :span="6" :offset="9">
           <el-input placeholder="Please input userid" v-model="user_id" ></el-input>
           <el-input placeholder="Please input password" v-model="password" type="password"></el-input>
@@ -37,7 +38,8 @@
     },
     methods: {
       test () {
-        alert('hoge')
+        alert('login')
+        this.$router.push('input')
       }
     }
   }
